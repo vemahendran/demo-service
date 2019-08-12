@@ -1,0 +1,16 @@
+configuration:
+  status: warn
+
+  appenders:
+    console:
+      name: ConsoleAppender
+      JsonLayout:
+        complete: false
+        compact: true
+        eventEol: true
+
+  loggers:
+    root:
+      level: info
+      appenderRef:
+        ref: ConsoleAppender

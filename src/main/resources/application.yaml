@@ -1,0 +1,33 @@
+
+server:
+  port: 9080
+  servlet:
+    context-path: /demo-service/v1.0
+
+spring:
+  profiles:
+    default: development
+    active: development
+  mvc:
+    throw-exception-if-no-handler-found: true
+    resources:
+      add-mappings: false
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+
+---
+
+spring:
+  profiles: development
+
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
+
+---
+
+spring:
+  profiles: production
