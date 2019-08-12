@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.example.demo</groupId>
 	<artifactId>demo-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>demo-service</name>
 	<description>Demo service for Spring Boot</description>
 
